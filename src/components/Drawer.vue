@@ -38,7 +38,7 @@
     data () {
       return {
         items: [
-          { title: 'Início', icon: 'mdi-view-dashboard' },
+          { title: 'Início', icon: 'mdi-view-dashboard', to:'/inicio'},
           { title: 'Machos', icon: 'mdi-gender-male' },
           { title: 'Fêmeas', icon: 'mdi-gender-female' },
           { title: 'Agenda', icon: 'mdi-calendar-month-outline'}

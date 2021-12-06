@@ -13,6 +13,13 @@ export default new Vuex.Store({
             {nome: 'Otavio', frequencia: '3 semanas', peso: '3.5kg', idade: '2 anos', nome_dono: 'Francisco', imagem: '4'},
             {nome: 'Fifi', frequencia: '4 semanas', peso: '0.5kg', idade: '5 anos', nome_dono: 'Lara', imagem: '5'}
         ],
+        title: "Nome do Cãozinho",
+        events: []
+    },
+    getters: {
+        bigTitle(state){
+            return state.title.toUpperCase()
+        }
     },
     mutations: {
         SET_EVENTS(state, payload){
@@ -30,10 +37,6 @@ export default new Vuex.Store({
                 })
             .catch(error=>{console.log(error)})
         }
-    },
-    getters: {
-        bigTitle(state){
-            return state.title.toUpperCase()
-        }
     }
+
   })

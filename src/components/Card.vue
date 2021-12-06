@@ -73,7 +73,7 @@
 
 <script>
 import Drawer from './Drawer';
-import Store from '../store'
+import Store from '../store';
 
   export default {
 

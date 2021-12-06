@@ -8,7 +8,7 @@
     <v-toolbar dense>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Nome do cãozinho</v-toolbar-title>
+      <v-toolbar-title>{{title}}</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -26,3 +26,21 @@
     </v-toolbar>
   </v-card>
 </template>
+
+<script>
+import Store from '../store';
+
+export default {
+  name: 'App',
+
+  computed:{
+    title(){
+      return Store.getters.bigTitle
+    },
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
