@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
+import Drawer from '@/components/Drawer'
+import Card from '@/components/Card'
 
 Vue.use(VueRouter)
 
@@ -11,9 +13,19 @@ const routes = [
     component: HelloWorld
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/dashboard',
+    name: 'Dashboard',
     component: () => import('../App.vue')
+  },
+  {
+    path: '/drawer',
+    name: 'Drawer',
+    component: Drawer
+  },
+  {
+    path: '/card',
+    name: 'Card',
+    component: Card
   }
 ]
 

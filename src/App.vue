@@ -1,14 +1,9 @@
 <template>
   <v-app>
-    <router-view/>
+    <Topbar/>
+    <Card/>
     <v-main>
-      <Topbar/>
-      <v-main>
-        <Card/>
-      </v-main>
-
-      
-      
+      <router-view/>
     </v-main>
   </v-app>
 </template>
