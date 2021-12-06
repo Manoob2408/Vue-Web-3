@@ -73,6 +73,7 @@
 
 <script>
 import Drawer from './Drawer';
+import Store from '../store'
 
   export default {
 
@@ -82,14 +83,7 @@ import Drawer from './Drawer';
     data: () => ({
       loading: false,
       selection: 1,
-      dogs: [
-          {nome: 'Chico', frequencia: '2 semanas', peso: '3.5kg', idade: '6 anos', nome_dono: 'Daniel', imagem: '1'},
-          {nome: 'Dora', frequencia: '2 semanas', peso: '5.3kg', idade: '3 anos', nome_dono: 'Isabella', imagem: '2'},
-          {nome: 'Bento', frequencia: '1 semana', peso: '1.5kg', idade: '6 meses', nome_dono: 'Rebecca', imagem: '3'},
-          {nome: 'Otavio', frequencia: '3 semanas', peso: '3.5kg', idade: '2 anos', nome_dono: 'Francisco', imagem: '4'},
-          {nome: 'Fifi', frequencia: '4 semanas', peso: '0.5kg', idade: '5 anos', nome_dono: 'Lara', imagem: '5'}
-      ],
-      teste: '../assets/images/Dog-1.jpg'
+      dogs: Store.state.dogs
     }),
 
     methods: {
